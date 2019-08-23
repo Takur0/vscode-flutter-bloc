@@ -1,9 +1,9 @@
 {
 	"name": "flutter-bloc",
 	"displayName": "flutter-bloc",
-	"description": "",
+	"description": "BLoC Pattern for Flutter Extention, writing Files.",
 	"publisher": "yt1997kt",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
