@@ -2,7 +2,7 @@
 	"name": "flutter-bloc",
 	"displayName": "flutter-bloc",
 	"description": "",
-	"publisher": "Takur0",
+	"publisher": "yt1997kt",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.37.0"
@@ -11,15 +11,21 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onFileSystem:file",
+        "onCommand:extension.helloWorld",
+        "onCommand:flutterBloc.addScreenFiles"
 	],
-	"repository": "",
+	"repository": "https://github.com/Takur0/vscode-flutter-bloc",
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
 				"command": "extension.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "flutterBloc.addScreenFiles",
+				"title": "Create New Screen Files"
 			}
 		]
 	},
@@ -40,5 +46,10 @@
 		"typescript": "^3.3.1",
 		"tslint": "^5.12.1",
 		"vscode-test": "^1.0.2"
+	},
+	"__metadata": {
+		"id": "be4d0e5a-36fd-4ca8-a2e9-9fd93ddec6d1",
+		"publisherDisplayName": "Takur0",
+		"publisherId": "10c99fd7-d46f-4165-b259-c5d975efc28a"
 	}
 }
