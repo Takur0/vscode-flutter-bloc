@@ -4,7 +4,7 @@
 	"description": "BLoC Pattern for Flutter Extention, writing Files, Tests.",
 	"publisher": "yt1997kt",
 	"icon": "flutter-bloc-icon.png",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -15,7 +15,7 @@
 		"onFileSystem:file",
         "onCommand:extension.helloWorld",
         "onCommand:flutterBloc.addScreenFiles",
-        "onCommand:flutterBloc.addScreenTests"
+        "onCommand:flutterBloc.addScreenTest"
 	],
 	"repository": {
 		"type": "git",
@@ -33,8 +33,8 @@
 				"title": "Create New Screen Files"
 			},
 			{
-				"command": "flutterBloc.addScreenFiles",
-				"title": "Create New Screen Tests"
+				"command": "flutterBloc.addScreenTest",
+				"title": "Create New Screen Test"
 			}
 		]
 	},
