@@ -1,9 +1,10 @@
 {
 	"name": "flutter-bloc",
 	"displayName": "flutter-bloc",
-	"description": "BLoC Pattern for Flutter Extention, writing Files.",
+	"description": "BLoC Pattern for Flutter Extention, writing Files, Tests.",
 	"publisher": "yt1997kt",
-	"version": "0.0.3",
+	"icon": "flutter-bloc-icon.png",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.37.0"
 	},
@@ -13,9 +14,13 @@
 	"activationEvents": [
 		"onFileSystem:file",
         "onCommand:extension.helloWorld",
-        "onCommand:flutterBloc.addScreenFiles"
+        "onCommand:flutterBloc.addScreenFiles",
+        "onCommand:flutterBloc.addScreenTests"
 	],
-	"repository": "https://github.com/Takur0/vscode-flutter-bloc",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Takur0/vscode-flutter-bloc"
+	},
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -26,6 +31,10 @@
 			{
 				"command": "flutterBloc.addScreenFiles",
 				"title": "Create New Screen Files"
+			},
+			{
+				"command": "flutterBloc.addScreenFiles",
+				"title": "Create New Screen Tests"
 			}
 		]
 	},

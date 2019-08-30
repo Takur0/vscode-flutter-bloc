@@ -17,10 +17,10 @@ export function activate(context: vscode.ExtensionContext) {
 		if (temp_arg === undefined){
 			temp_arg = 'undefined';
 		}
-		vscode.workspace.fs.createDirectory(vscode.Uri.file(temp_arg+`/lib/screen/`));
+    vscode.workspace.fs.createDirectory(vscode.Uri.file(temp_arg+`/lib/screen/`));
 		const wsFolder = vscode.workspace.getWorkspaceFolder(vscode.Uri.file(temp_arg));
 		if (wsFolder === undefined){
-			vscode.window.showInformationMessage('Workspace is undefined. Argument is ' + temp_arg);
+			vscode.window.showInformationMessage('Workspace is undefined. Please Open Folder.');
 		} else {
 		
 		
@@ -45,7 +45,11 @@ export function activate(context: vscode.ExtensionContext) {
 				console.error(e);
 			}
 		}
-	}));
+  }));
+  // TODO: implement addScreenTest Command 
+  context.subscriptions.push(vscode.commands.registerCommand('flutterBloc.addScreenTest', async _ => {
+    
+  }));  
 	
 }
 
